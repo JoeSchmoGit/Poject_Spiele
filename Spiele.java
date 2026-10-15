@@ -2,14 +2,17 @@
 public class Spiele
 {
     private String name;
-    private int preis;
-    private boolean verfuegbar;
+    private int price;
+    private boolean avaible;
+    private String publisher;
+    
     
     public Spiele(String name, int preis, boolean verfuebar)
     {
         setName(name);
         setPreis(preis);
-        setVerfuegbar(verfuegbar);
+        setVerfuegbar(avaible);
+        setPublisher(publisher);
     }
     
     public void setName(String neuName)
@@ -19,12 +22,17 @@ public class Spiele
     
     public void setPreis(int neuPreis)
     {
-        preis = neuPreis;
+        price = neuPreis;
     }
     
     public void setVerfuegbar(boolean neuVerfuegbar)
     {
-        verfuegbar = neuVerfuegbar;
+        avaible = neuVerfuegbar;
+    }
+    
+    public void setPublisher(String neuPublisher)
+    {
+        publisher = neuPublisher;    
     }
     
     public String getName()
@@ -34,11 +42,16 @@ public class Spiele
     
     public int getPreis()
     {
-        return preis;
+        return price;
     }
     
     public boolean getVerfuegbar()
     {
-        return verfuegbar;
+        return avaible;
+    }
+    
+    public String getPublisher()
+    {
+        return publisher;
     }
 }
